@@ -3,48 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\william.thai\\source\\repos\\BookStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\migrations\\bookdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:migrations\\bookdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\migrations\\20250422013811_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:migrations\\20250422013811_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\bookstore.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:bookstore.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\data\\bookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:data\\bookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\bookstore.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:bookstore.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\controllers\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:controllers\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|c:\\users\\william.thai\\source\\repos\\bookstore\\repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00670651-4B3F-4C04-8693-78AC7281FA42}|BookStore.API.csproj|solutionrelative:repository\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,139 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BookDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Migrations\\BookDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\BookDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Migrations\\BookDbContextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\BookDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Repository\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Repository\\BaseRepository.cs",
+              "RelativeToolTip": "Repository\\BaseRepository.cs",
+              "ViewState": "AgIAAAIAAACAZ2ZmZmYNwBgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:40:27.216Z",
+              "WhenOpened": "2025-04-27T15:23:55.945Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20250422013811_initialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Migrations\\20250422013811_initialMigration.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250422013811_initialMigration.cs",
-              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Migrations\\20250422013811_initialMigration.cs",
-              "RelativeToolTip": "Migrations\\20250422013811_initialMigration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T01:38:11.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookStore.API.http",
-              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\BookStore.API.http",
-              "RelativeDocumentMoniker": "BookStore.API.http",
-              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\BookStore.API.http",
-              "RelativeToolTip": "BookStore.API.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-04-21T17:34:48.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-21T16:47:34.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T15:19:13.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Data\\BookDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\BookDbContext.cs",
-              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Data\\BookDbContext.cs",
-              "RelativeToolTip": "Data\\BookDbContext.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T15:08:09.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookStore.API",
-              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\BookStore.API.csproj",
-              "RelativeDocumentMoniker": "BookStore.API.csproj",
-              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\BookStore.API.csproj",
-              "RelativeToolTip": "BookStore.API.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-20T15:07:04.592Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Author.cs",
-              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Models\\Author.cs",
-              "RelativeDocumentMoniker": "Models\\Author.cs",
-              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Models\\Author.cs",
-              "RelativeToolTip": "Models\\Author.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T14:38:00.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Models\\Book.cs",
-              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Models\\Book.cs",
-              "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T14:37:15.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Controllers\\Book.cs",
-              "RelativeDocumentMoniker": "Controllers\\Book.cs",
-              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Controllers\\Book.cs",
-              "RelativeToolTip": "Controllers\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T14:34:13.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\william.thai\\source\\repos\\BookStore\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T14:33:17.454Z"
             }
           ]
         }

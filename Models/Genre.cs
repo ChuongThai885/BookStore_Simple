@@ -2,7 +2,7 @@
 
 namespace BookStore.API.Models
 {
-    public class Author
+    public class Genre
     {
         [Key]
         public Guid Id { get; set; } = new Guid();

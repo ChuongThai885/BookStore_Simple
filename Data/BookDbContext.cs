@@ -8,6 +8,7 @@ namespace BookStore.API.Data
 
         public DbSet<Models.Book> Books { get; set; }
         public DbSet<Models.Author> Authors { get; set; }
+        public DbSet<Models.Genre> Genres { get; set; }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{

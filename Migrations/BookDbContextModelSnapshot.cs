@@ -22,6 +22,21 @@ namespace BookStore.API.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("BookGenre", b =>
+                {
+                    b.Property<Guid>("BooksId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("GenreId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("BooksId", "GenreId");
+
+                    b.HasIndex("GenreId");
+
+                    b.ToTable("BookGenre");
+                });
+
             modelBuilder.Entity("BookStore.API.Models.Author", b =>
                 {
                     b.Property<Guid>("Id")
@@ -29,7 +44,6 @@ namespace BookStore.API.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
@@ -47,15 +61,10 @@ namespace BookStore.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("AuthorId")
+                    b.Property<Guid?>("AuthorId")
                         .HasColumnType("uuid");
 
                     b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Genre")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<float>("Price")
@@ -75,15 +84,51 @@ namespace BookStore.API.Migrations
                     b.ToTable("Books");
                 });
 
-            modelBuilder.Entity("BookStore.API.Models.Book", b =>
+            modelBuilder.Entity("BookStore.API.Models.Genre", b =>
                 {
-                    b.HasOne("BookStore.API.Models.Author", "Author")
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Genres");
+                });
+
+            modelBuilder.Entity("BookGenre", b =>
+                {
+                    b.HasOne("BookStore.API.Models.Book", null)
                         .WithMany()
-                        .HasForeignKey("AuthorId")
+                        .HasForeignKey("BooksId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("BookStore.API.Models.Genre", null)
+                        .WithMany()
+                        .HasForeignKey("GenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BookStore.API.Models.Book", b =>
+                {
+                    b.HasOne("BookStore.API.Models.Author", "Author")
+                        .WithMany("Books")
+                        .HasForeignKey("AuthorId");
+
                     b.Navigation("Author");
+                });
+
+            modelBuilder.Entity("BookStore.API.Models.Author", b =>
+                {
+                    b.Navigation("Books");
                 });
 #pragma warning restore 612, 618
         }
