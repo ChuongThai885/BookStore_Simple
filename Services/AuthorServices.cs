@@ -4,7 +4,7 @@ namespace BookStore.API.Services
 {
     public class AuthorServices: IAuthorServices
     {
-        private IAuthorRepository _repository;
+        private readonly IAuthorRepository _repository;
         public AuthorServices(IAuthorRepository _repository)
         {
             this._repository = _repository;

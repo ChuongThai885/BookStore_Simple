@@ -42,13 +42,45 @@
     ]
   },
   {
-    "ContainingType": "BookStore.API.Controllers.Book",
-    "Method": "GetAllBooks",
-    "RelativePath": "api/Book",
+    "ContainingType": "BookStore.API.Controllers.BookController",
+    "Method": "Add",
+    "RelativePath": "api/Book/books/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BookStore.API.Services.BookCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookStore.API.Controllers.BookController",
+    "Method": "Get",
+    "RelativePath": "api/Book/books/getall",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookStore.API.Models.Book, BookStore.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

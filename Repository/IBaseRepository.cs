@@ -1,8 +1,12 @@
-﻿namespace BookStore.API.Repository
+﻿using System.Linq.Expressions;
+
+namespace BookStore.API.Repository
 {
     public interface IBaseRepository<T> where T : class
     {
-        Task<IEnumerable<T>> GetAsync();
-        Task AddAsync(T entity);
+        Task<IEnumerable<T>> GetAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default(CancellationToken));
+        Task<T?> FindAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default(CancellationToken));
+        Task<T?> FindForUPdateAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default(CancellationToken));
+        Task AddAsync(T entity, CancellationToken cancellationToken = default(CancellationToken));
     }
 }

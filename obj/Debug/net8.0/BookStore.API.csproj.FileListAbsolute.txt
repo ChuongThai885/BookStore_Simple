@@ -173,3 +173,4 @@ C:\Users\william.thai\source\repos\BookStore\bin\Debug\net8.0\runtimes\win\lib\n
 C:\Users\william.thai\source\repos\BookStore\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\william.thai\source\repos\BookStore\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\william.thai\source\repos\BookStore\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\william.thai\source\repos\BookStore\bin\Debug\net8.0\AutoMapper.dll

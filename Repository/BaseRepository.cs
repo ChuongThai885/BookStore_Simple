@@ -1,4 +1,5 @@
-﻿using BookStore.API.Data;
+﻿using System.Linq.Expressions;
+using BookStore.API.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.API.Repository
@@ -14,15 +15,26 @@ namespace BookStore.API.Repository
             this._dbSet = _dbcontext.Set<T>();
         }
 
-        public async Task<IEnumerable<T>> GetAsync()
+        public async Task<IEnumerable<T>> GetAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default(CancellationToken) )
         {
-            return await this._dbSet.ToListAsync();
+            if (predicate == null) 
+            {
+                return await this._dbSet.ToListAsync(cancellationToken);
+            }
+            return await this._dbSet.Where(predicate).ToListAsync(cancellationToken);
         }
-
-        public async Task AddAsync(T entity)
+        public async Task<T?> FindForUPdateAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default(CancellationToken))
         {
-            await this._dbSet.AddAsync(entity);
-            await _dbcontext.SaveChangesAsync(); // Fixed the issue by replacing SaveAsAsync with SaveChangesAsync  
+            return await this._dbSet.AsTracking().FirstOrDefaultAsync(predicate, cancellationToken);
+        }
+        public async Task<T?> FindAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default(CancellationToken))
+        {
+            return await this._dbSet.FirstOrDefaultAsync(predicate, cancellationToken);
+        }
+        public async Task AddAsync(T entity, CancellationToken cancellationToken = default(CancellationToken))
+        {
+            await this._dbSet.AddAsync(entity, cancellationToken);
+            await _dbcontext.SaveChangesAsync();
         }
     }
 }

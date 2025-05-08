@@ -1,0 +1,40 @@
+﻿using AutoMapper;
+using BookStore.API.Repository;
+using Microsoft.EntityFrameworkCore;
+
+namespace BookStore.API.Services
+{
+    public class BookService: IBookService
+    {
+        private readonly IMapper _mapper;
+        private readonly IBookRepository _bookRepository;
+        private readonly IAuthorRepository _authorRepository;
+        public BookService(IMapper mapper,IBookRepository bookRepository, IAuthorRepository authorRepository) {
+            this._mapper = mapper;
+            this._bookRepository = bookRepository;
+            this._authorRepository = authorRepository;
+        }
+        public async Task<IEnumerable<Models.Book>> Get()
+        {
+            return await _bookRepository.GetAsync();
+        }
+        public async Task Add(BookCreateDTO dto)
+        {
+            if (dto.AuthorId == null)
+                throw new ArgumentException("AuthorId is required.");
+
+            var author = await _authorRepository.FindAsync(item => item.Id == dto.AuthorId);
+
+            if (author == null)
+                throw new KeyNotFoundException($"Author with ID {dto.AuthorId} not found.");
+
+            var entity = this._mapper.Map<Models.Book>(dto);
+
+            entity.Author = author;
+
+            author.Books.Add(entity);
+
+            await _bookRepository.AddAsync(entity);
+        }
+    }
+}
