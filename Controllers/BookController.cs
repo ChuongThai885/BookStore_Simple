@@ -15,7 +15,7 @@ namespace BookStore.API.Controllers
         }
 
         [HttpGet("books/getall")]
-        public async Task<IEnumerable<Models.Book>> Get()
+        public async Task<IEnumerable<BookDTO>> Get()
         {
             return await this._service.Get();
         }

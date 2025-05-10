@@ -2,7 +2,7 @@
 {
     public interface IBookService
     {
-        Task<IEnumerable<Models.Book>> Get();
+        Task<IEnumerable<BookDTO>> Get();
         Task Add(BookCreateDTO dto);
     }
 }

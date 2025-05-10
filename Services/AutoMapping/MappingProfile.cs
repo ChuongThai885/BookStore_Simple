@@ -8,6 +8,9 @@ namespace BookStore.API.Services.AutoMapping
             CreateMap<BookCreateDTO, Models.Book>()
                 .ForMember(dest => dest.Author, opt => opt.Ignore())
                 .ForMember(dest => dest.Genre, opt => opt.Ignore());
+            CreateMap<Models.Author, BookAuthorDTO>();
+            CreateMap<Models.Genre, BookGenreDTO>();
+            CreateMap<Models.Book, BookDTO>();
         }
     }
 }

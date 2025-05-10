@@ -14,7 +14,14 @@ namespace BookStore.API.Repository
             this._dbcontext = _dbContext;
             this._dbSet = _dbcontext.Set<T>();
         }
-
+        public IQueryable<T> GetSet(Expression<Func<T, bool>> predicate = null)
+        {
+            if (predicate == null)
+            {
+                return this._dbSet;
+            }
+            return this._dbSet.Where(predicate);
+        }
         public async Task<IEnumerable<T>> GetAsync(Expression<Func<T, bool>> predicate = null, CancellationToken cancellationToken = default(CancellationToken) )
         {
             if (predicate == null) 
@@ -23,7 +30,7 @@ namespace BookStore.API.Repository
             }
             return await this._dbSet.Where(predicate).ToListAsync(cancellationToken);
         }
-        public async Task<T?> FindForUPdateAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default(CancellationToken))
+        public async Task<T?> FindForUpdateAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default(CancellationToken))
         {
             return await this._dbSet.AsTracking().FirstOrDefaultAsync(predicate, cancellationToken);
         }

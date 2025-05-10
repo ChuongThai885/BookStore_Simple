@@ -14,9 +14,11 @@ namespace BookStore.API.Services
             this._bookRepository = bookRepository;
             this._authorRepository = authorRepository;
         }
-        public async Task<IEnumerable<Models.Book>> Get()
+        public async Task<IEnumerable<BookDTO>> Get()
         {
-            return await _bookRepository.GetAsync();
+            var query = await _bookRepository.GetSet().Include(item => item.Author).ToListAsync();
+            var result = this._mapper.Map<IEnumerable<BookDTO>>(query); // Fix: Map to IEnumerable<BookDTO>
+            return result;
         }
         public async Task Add(BookCreateDTO dto)
         {

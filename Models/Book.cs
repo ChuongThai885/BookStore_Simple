@@ -12,6 +12,5 @@ namespace BookStore.API.Models
         public virtual ICollection<Genre> Genre { get; set; } = [];
         public int Quantity { get; set; } = 0;
         public float Price { get; set; } = 0;
-
     }
 }
