@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Author"
+                    "$ref": "#/components/schemas/AuthorDTO"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Author"
+                    "$ref": "#/components/schemas/AuthorDTO"
                   }
                 }
               },
@@ -34,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Author"
+                    "$ref": "#/components/schemas/AuthorDTO"
                   }
                 }
               }
@@ -52,17 +52,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/AuthorCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/AuthorCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/AuthorCreateDTO"
               }
             }
           }
@@ -146,7 +146,60 @@
   },
   "components": {
     "schemas": {
-      "Author": {
+      "AuthorBookDTO": {
+        "required": [
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "genre": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BookGenreDTO"
+            },
+            "nullable": true
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "price": {
+            "type": "number",
+            "format": "float"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AuthorCreateDTO": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AuthorDTO": {
         "required": [
           "name"
         ],
@@ -167,48 +220,9 @@
           "books": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Book"
+              "$ref": "#/components/schemas/AuthorBookDTO"
             },
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Book": {
-        "required": [
-          "title"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "title": {
-            "type": "string",
-            "nullable": true
-          },
-          "author": {
-            "$ref": "#/components/schemas/Author"
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "genre": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Genre"
-            },
-            "nullable": true
-          },
-          "quantity": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "price": {
-            "type": "number",
-            "format": "float"
           }
         },
         "additionalProperties": false
@@ -327,41 +341,6 @@
           },
           "description": {
             "type": "string",
-            "nullable": true
-          },
-          "books": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Book"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "Genre": {
-        "required": [
-          "name"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "books": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Book"
-            },
             "nullable": true
           }
         },

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BookStore.API.Repository;
+using BookStore.API.Services.DTO;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.API.Services

@@ -1,8 +1,10 @@
-﻿namespace BookStore.API.Services
+﻿using BookStore.API.Services.DTO;
+
+namespace BookStore.API.Services
 {
     public interface IAuthorServices
     {
-        Task<IEnumerable<Models.Author>> Get();
-        Task Add(Models.Author data);
+        Task<IEnumerable<AuthorDTO>> Get();
+        Task Add(AuthorCreateDTO data);
     }
 }

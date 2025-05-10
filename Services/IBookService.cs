@@ -1,4 +1,6 @@
-﻿namespace BookStore.API.Services
+﻿using BookStore.API.Services.DTO;
+
+namespace BookStore.API.Services
 {
     public interface IBookService
     {

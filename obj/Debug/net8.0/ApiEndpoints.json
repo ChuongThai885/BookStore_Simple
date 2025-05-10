@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "author",
-        "Type": "BookStore.API.Models.Author",
+        "Type": "BookStore.API.Services.DTO.AuthorCreateDTO",
         "IsRequired": true
       }
     ],
@@ -31,7 +31,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookStore.API.Models.Author, BookStore.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookStore.API.Services.DTO.AuthorDTO, BookStore.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -51,7 +51,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "BookStore.API.Services.BookCreateDTO",
+        "Type": "BookStore.API.Services.DTO.BookCreateDTO",
         "IsRequired": true
       }
     ],
@@ -73,7 +73,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookStore.API.Services.BookDTO, BookStore.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookStore.API.Services.DTO.BookDTO, BookStore.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
